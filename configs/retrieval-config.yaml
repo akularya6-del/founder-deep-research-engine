@@ -1,0 +1,16 @@
+version: "2.0"
+providers:
+  tavily:
+    env_key: TAVILY_API_KEY
+    endpoint_env: TAVILY_ENDPOINT
+  firecrawl:
+    env_key: FIRECRAWL_API_KEY
+    endpoint_env: FIRECRAWL_SEARCH_ENDPOINT
+  searxng:
+    endpoint_env: SEARXNG_ENDPOINT
+rules:
+  require_retrieval_event: true
+  require_exact_excerpt: true
+  require_public_contact_verbatim_match: true
+  synthetic_fallback: false
+  max_source_bytes: 5000000

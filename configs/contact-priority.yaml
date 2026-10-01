@@ -1,0 +1,19 @@
+version: "2.0"
+order:
+  - official_leadership
+  - official_press
+  - assistant_or_office
+  - conference
+  - investor_relations
+  - professional_profile
+  - official_social
+  - company_general
+prohibited:
+  - inferred_email
+  - guessed_phone
+  - private_personal_data
+  - deceptive_identity
+freshness_days:
+  current: 90
+  recent: 365
+

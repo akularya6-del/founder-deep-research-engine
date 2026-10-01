@@ -1,0 +1,7 @@
+version: "2.0"
+weights:
+  ai: {business_quality: 0.16, educational_value: 0.22, operational_depth: 0.16, hidden_gem: 0.08}
+  fintech: {business_quality: 0.18, educational_value: 0.20, operational_depth: 0.14, hidden_gem: 0.08}
+  industrial: {business_quality: 0.16, educational_value: 0.18, operational_depth: 0.22, hidden_gem: 0.12}
+  strategic: {business_quality: 0.18, educational_value: 0.20, operational_depth: 0.18, hidden_gem: 0.12}
+

@@ -1,0 +1,14 @@
+version: "2.0"
+targets: {final: 100, reserve: 20}
+constraints:
+  category_tolerance: 0.03
+  max_same_city_share: 0.20
+  max_same_source_family_share: 0.25
+  max_same_investor_share: 0.20
+  minimum_hidden_gem_share: 0.40
+  minimum_physical_operations_share: 0.25
+replacement:
+  require_verified_reserve: true
+  preserve_category: true
+  preserve_or_improve_score: true
+

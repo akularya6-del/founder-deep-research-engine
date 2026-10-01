@@ -1,0 +1,15 @@
+version: "2.0"
+defaults:
+  max_attempts: 3
+  backoff_seconds: [2, 8, 30]
+  jitter: true
+  idempotent_only: true
+by_class:
+  transient: {max_attempts: 4}
+  rate_limit: {max_attempts: 5}
+  schema: {max_attempts: 1}
+  policy: {max_attempts: 0}
+  data: {max_attempts: 2}
+  resource: {max_attempts: 1}
+dead_letter_after_exhaustion: true
+

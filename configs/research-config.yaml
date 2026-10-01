@@ -1,0 +1,18 @@
+version: "2.0"
+mission:
+  target_founders: 100
+  reserve_founders: 20
+  global_search: true
+  public_information_only: true
+  saturation_allowed: true
+portfolio:
+  categories:
+    ai: 0.30
+    fintech: 0.10
+    industrial: 0.40
+    strategic: 0.20
+limits:
+  max_podcast_appearances: 20
+  max_concurrent_tasks: 6
+  max_candidate_age_days: 365
+

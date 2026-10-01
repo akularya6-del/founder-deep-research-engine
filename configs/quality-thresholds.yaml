@@ -1,0 +1,13 @@
+version: "2.0"
+blocking:
+  unsupported_material_claim: true
+  inferred_contact: true
+  unresolved_identity_collision: true
+  schema_failure: true
+  missing_primary_business_source: true
+targets:
+  source_coverage: 0.95
+  high_confidence_share: 0.70
+  portfolio_mix_tolerance: 0.03
+  duplicate_rate_max: 0.02
+

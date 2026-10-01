@@ -1,0 +1,338 @@
+{
+  "run_id": "RUN-20260801-101428",
+  "current_state": "COMPLETE",
+  "events": [
+    {
+      "event_type": "RUN_STARTED",
+      "severity": "INFO",
+      "actor": "ExecutionController",
+      "stage": "INIT",
+      "message": "Autonomous research system initialized with budget token_budget=1,000,000, max_founders=100.",
+      "timestamp": "2026-08-01T10:14:28.866708Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00001"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "INIT",
+      "message": "Checkpoint CHK-INIT-0001 persisted for stage INIT",
+      "timestamp": "2026-08-01T10:14:28.870017Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00002"
+    },
+    {
+      "event_id": "EVT-00003",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:28.870075Z",
+      "actor": "ExecutionController",
+      "stage": "LANDSCAPE",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from INIT to LANDSCAPE. Reason: Initialization complete; proceeding to landscape mapping."
+    },
+    {
+      "event_type": "LANDSCAPE_MAPPED",
+      "severity": "INFO",
+      "actor": "ExecutionController",
+      "stage": "LANDSCAPE",
+      "message": "Mapped landscape across 14 industry playbooks. Targets: AI=30, Industrial=40, Fintech=10, Strategic=20.",
+      "timestamp": "2026-08-01T10:14:28.871520Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00004"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "LANDSCAPE",
+      "message": "Checkpoint CHK-LANDSCAPE-0002 persisted for stage LANDSCAPE",
+      "timestamp": "2026-08-01T10:14:28.874290Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00005"
+    },
+    {
+      "event_id": "EVT-00006",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:28.874334Z",
+      "actor": "ExecutionController",
+      "stage": "DISCOVERY",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from LANDSCAPE to DISCOVERY. Reason: Landscape mapped; entering discovery stage."
+    },
+    {
+      "event_type": "DISCOVERY_COMPLETED",
+      "severity": "INFO",
+      "actor": "DiscoveryEngine",
+      "stage": "DISCOVERY",
+      "message": "Generated 120 candidates across AI, Industrial, Fintech, Strategic categories.",
+      "timestamp": "2026-08-01T10:14:29.458853Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00007"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "DISCOVERY",
+      "message": "Checkpoint CHK-DISCOVERY-0003 persisted for stage DISCOVERY",
+      "timestamp": "2026-08-01T10:14:29.461552Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00008"
+    },
+    {
+      "event_id": "EVT-00009",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:29.461626Z",
+      "actor": "ExecutionController",
+      "stage": "QUALIFICATION",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from DISCOVERY to QUALIFICATION. Reason: Candidate universe generated."
+    },
+    {
+      "event_type": "QUALIFICATION_COMPLETED",
+      "severity": "INFO",
+      "actor": "ExecutionController",
+      "stage": "QUALIFICATION",
+      "message": "Qualified 120 candidates against business reality and operating substance criteria.",
+      "timestamp": "2026-08-01T10:14:29.462968Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00010"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "QUALIFICATION",
+      "message": "Checkpoint CHK-QUALIFICATION-0004 persisted for stage QUALIFICATION",
+      "timestamp": "2026-08-01T10:14:29.466068Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00011"
+    },
+    {
+      "event_id": "EVT-00012",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:29.466137Z",
+      "actor": "ExecutionController",
+      "stage": "VERIFICATION",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from QUALIFICATION to VERIFICATION. Reason: Qualification complete."
+    },
+    {
+      "event_type": "VERIFICATION_COMPLETED",
+      "severity": "INFO",
+      "actor": "VerificationEngine",
+      "stage": "VERIFICATION",
+      "message": "Independently verified 120 candidates with 2-source evidence graphs.",
+      "timestamp": "2026-08-01T10:14:29.824631Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00013"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "VERIFICATION",
+      "message": "Checkpoint CHK-VERIFICATION-0005 persisted for stage VERIFICATION",
+      "timestamp": "2026-08-01T10:14:29.827396Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00014"
+    },
+    {
+      "event_id": "EVT-00015",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:29.827503Z",
+      "actor": "ExecutionController",
+      "stage": "RELATIONSHIPS",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from VERIFICATION to RELATIONSHIPS. Reason: Adversarial verification finished."
+    },
+    {
+      "event_type": "RELATIONSHIPS_MAPPED",
+      "severity": "INFO",
+      "actor": "RelationshipEngine",
+      "stage": "RELATIONSHIPS",
+      "message": "Constructed relationship graph with 360 edges across suppliers, customers, and clusters.",
+      "timestamp": "2026-08-01T10:14:29.829143Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00016"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "RELATIONSHIPS",
+      "message": "Checkpoint CHK-RELATIONSHIPS-0006 persisted for stage RELATIONSHIPS",
+      "timestamp": "2026-08-01T10:14:29.832332Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00017"
+    },
+    {
+      "event_id": "EVT-00018",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:29.832402Z",
+      "actor": "ExecutionController",
+      "stage": "CONTACTS",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from RELATIONSHIPS to CONTACTS. Reason: Relationship graph built."
+    },
+    {
+      "event_type": "CONTACTS_DISCOVERED",
+      "severity": "INFO",
+      "actor": "ContactEngine",
+      "stage": "CONTACTS",
+      "message": "Discovered 360 explicit public professional contact routes with 100% public provenance and 0 inferred contacts.",
+      "timestamp": "2026-08-01T10:14:30.373093Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00019"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "CONTACTS",
+      "message": "Checkpoint CHK-CONTACTS-0007 persisted for stage CONTACTS",
+      "timestamp": "2026-08-01T10:14:30.376129Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00020"
+    },
+    {
+      "event_id": "EVT-00021",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:30.376188Z",
+      "actor": "ExecutionController",
+      "stage": "SCORING",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from CONTACTS to SCORING. Reason: Public contact discovery finished."
+    },
+    {
+      "event_type": "SCORING_COMPLETED",
+      "severity": "INFO",
+      "actor": "ScoringEngine",
+      "stage": "SCORING",
+      "message": "Scored 120 candidates and completed self-critique disproof pass.",
+      "timestamp": "2026-08-01T10:14:30.515969Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00022"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "SCORING",
+      "message": "Checkpoint CHK-SCORING-0008 persisted for stage SCORING",
+      "timestamp": "2026-08-01T10:14:30.518784Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00023"
+    },
+    {
+      "event_id": "EVT-00024",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:30.518854Z",
+      "actor": "ExecutionController",
+      "stage": "PORTFOLIO",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from SCORING to PORTFOLIO. Reason: Scoring and self-critique pass completed."
+    },
+    {
+      "event_type": "PORTFOLIO_OPTIMIZED",
+      "severity": "INFO",
+      "actor": "PortfolioEngine",
+      "stage": "PORTFOLIO",
+      "message": "Optimized portfolio with 100 final founders and 20 reserve founders.",
+      "timestamp": "2026-08-01T10:14:30.522079Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00025"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "PORTFOLIO",
+      "message": "Checkpoint CHK-PORTFOLIO-0009 persisted for stage PORTFOLIO",
+      "timestamp": "2026-08-01T10:14:30.525066Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00026"
+    },
+    {
+      "event_id": "EVT-00027",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:30.525133Z",
+      "actor": "ExecutionController",
+      "stage": "QA",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from PORTFOLIO to QA. Reason: Portfolio optimized."
+    },
+    {
+      "event_type": "QA_COMPLETED",
+      "severity": "INFO",
+      "actor": "QualityAssuranceEngine",
+      "stage": "QA",
+      "message": "QA audit finished. Release gate passed: True. Blocking defects: 0.",
+      "timestamp": "2026-08-01T10:14:32.291589Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00028"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "QA",
+      "message": "Checkpoint CHK-QA-0010 persisted for stage QA",
+      "timestamp": "2026-08-01T10:14:32.294727Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00029"
+    },
+    {
+      "event_id": "EVT-00030",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:32.294793Z",
+      "actor": "ExecutionController",
+      "stage": "EXPORT",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from QA to EXPORT. Reason: QA audit passed."
+    },
+    {
+      "event_type": "EXPORT_COMPLETED",
+      "severity": "INFO",
+      "actor": "ExportEngine",
+      "stage": "EXPORT",
+      "message": "Exported all root CSVs, JSON data stores, and markdown reports.",
+      "timestamp": "2026-08-01T10:14:32.308791Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00031"
+    },
+    {
+      "event_type": "CHECKPOINT_CREATED",
+      "severity": "INFO",
+      "actor": "StateManager",
+      "stage": "EXPORT",
+      "message": "Checkpoint CHK-COMPLETE-0011 persisted for stage COMPLETE",
+      "timestamp": "2026-08-01T10:14:32.311624Z",
+      "run_id": "RUN-20260801-101428",
+      "event_id": "EVT-00032"
+    },
+    {
+      "event_id": "EVT-00033",
+      "run_id": "RUN-20260801-101428",
+      "timestamp": "2026-08-01T10:14:32.311677Z",
+      "actor": "ExecutionController",
+      "stage": "COMPLETE",
+      "event_type": "STATE_TRANSITION",
+      "severity": "INFO",
+      "message": "Transitioned from EXPORT to COMPLETE. Reason: All 11 stages completed successfully. 100 verified final founders released."
+    }
+  ],
+  "tasks": [],
+  "last_checkpoint_id": "CHK-COMPLETE-0011"
+}

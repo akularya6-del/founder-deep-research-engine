@@ -1,0 +1,7 @@
+version: "2.0"
+format: jsonl
+append_only: true
+event_fields: [event_id, run_id, timestamp, actor, stage, event_type, severity, entity_ids, input_ids, output_ids, message, schema_version]
+retention_days: 365
+redact_fields: [home_address, private_phone, private_email, credentials]
+

@@ -1,0 +1,46 @@
+# Python virtual environments
+.live-venv/
+pdf_env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local env & secrets
+.env
+.env.*
+.env.local
+*.pem
+*.key
+
+# Output data & logs
+logs/
+results/
+sources/
+
+# One-off personal scripts & personal documents
+DOC-20260516-WA0000..pdf
+Modified_Document_with_DOB_Change.pdf
+modify_pdf.py
+
+# Strictly No Media Files
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.bmp
+*.tiff
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.zip
+*.tar.gz
+
+.DS_Store

@@ -1,0 +1,20 @@
+version: "2.0"
+units:
+  token_budget: 1000000
+  query_budget: 5000
+  source_review_budget: 5000
+  tool_call_budget: 12000
+  wall_clock_hours: 24
+allocation:
+  landscape: 0.08
+  discovery: 0.30
+  verification: 0.25
+  relationships: 0.08
+  contacts: 0.08
+  scoring_portfolio: 0.10
+  qa_export: 0.06
+  recovery_reserve: 0.05
+alerts:
+  burn_rate_percent: 80
+  reserve_percent: 10
+

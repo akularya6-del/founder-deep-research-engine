@@ -1,0 +1,14 @@
+version: "2.0"
+scale: {min: 0, max: 10}
+thresholds:
+  minimum_business_quality: 5
+  minimum_educational_value: 6
+  minimum_operational_depth: 5
+  minimum_podcast_fit: 7
+  minimum_confidence: 25
+  final_contact_route_required: false
+penalties:
+  media_saturation_per_point: 0.10
+  unresolved_major_claim: 1.0
+  source_family_overconcentration: 0.5
+
